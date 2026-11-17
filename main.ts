@@ -10,13 +10,13 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const TEXT = [
-  'The kettle has just stopped, and the steam thins above it.',
-  'The kitchen smells faintly of toast.',
-  'A bus passes, and the street is empty again the way it is after rain.',
-  'A plant on the windowsill leans toward the last light and does not hurry.',
-  'Downstairs a radio plays a half-known song, and someone hums along without getting the words right.',
-  'The light on the wall moves a little; the day is done rushing.',
-  'Nothing left to do but sit while the tea cools to the temperature you like.',
+  'The washing machine has finished, and the flat is quiet in a new way.',
+  'A cat is asleep on the folded blanket, paws tucked under its chin.',
+  'Somewhere down the hall a clock ticks, and nobody is in a hurry to wind it.',
+  'A book lies open face-down on the arm of the sofa, waiting where it was left.',
+  'The floorboards have cooled, and the rooms have settled into their evening shape.',
+  'Outside, a dog barks once at nothing, and then thinks better of it.',
+  'There is nowhere the day needs to go now; it has already arrived.',
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), TEXT);
